@@ -15,11 +15,21 @@
             </div>
             <div class="nav-container">
                 <div class="hlist nav-list">
-                    <span>--NAV_ELEMENT1--</span>
-                    <span>--NAV_ELEMENT2--</span>
-                    <span>--NAV_ELEMENT3--</span>
-                    <span>--NAV_ELEMENT4--</span>
-                    <span>--NAV_ELEMENT5--</span>
+                    <script class="temp-script">
+                        var navData=[
+                            ["Examples", "/examples"],
+                            ["Contact", "/contact"],
+                            ["Browse", "/browse"],
+                            ["Learn More", "/info"]
+                        ];
+                        var navBar=document.getElementsByClassName("nav-list")[0];
+                        for(var i=0; i<navData.length; i++) {
+                            var span=document.createElement("span");
+                            span.appendChild(document.createTextNode(navData[i][0]));
+                            navBar.appendChild(span);
+                        }
+                        cleanup();
+                    </script>
                 </div>  
             </div>
         </div>
