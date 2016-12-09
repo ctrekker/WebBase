@@ -1,39 +1,63 @@
 /*
 PLEASE UNCOMMENT ONLY CLASS IDENTIFYER IF ADDED PROPERTY!
 Note to use block comments as well.
-
-.title-pane {
-    
+*/
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: NotoSans;
 }
 
+.title-pane {
+    margin: 0px;
+    background-color: #1589FF;
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+}
+/*
 .header-container {
 
 }
-
+*/
 .main-header-container {
-
+    float: left;
+    position: relative;
 }
 
 .main-header {
-
+    position: absolute;
+    top: 50px;
+    left: 33px;
+    transform: translate(0px, -50px);
+    font-size: 34px;
 }
 
+.main-header>a {
+    text-decoration: none;
+    color: inherit;
+}
+/*
 .nav-container {
     
 }
-
+*/
 .nav-list {
-
+    float: right;
 }
-
+/*
 .nav-element {
 
 }
-
+*/
 .body-pane {
-
+    position: absolute;
+    top: 100px;
 }
-
+/*
 .content-pane {
 
 }
