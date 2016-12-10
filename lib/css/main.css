@@ -65,6 +65,33 @@ body {
     text-decoration: none;
     color: inherit;
 }
+
+.user-container {
+    cursor: default;
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+/*
+.user-options-list {
+
+}
+*/
+
+.user-option {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.user-option:hover {
+    color: blue;
+}
+
+.v-divider {
+    border-left: 1px solid black;
+    margin-right: 4px;
+    cursor: default;
+}
 .body-pane {
     position: absolute;
     top: 68px;
