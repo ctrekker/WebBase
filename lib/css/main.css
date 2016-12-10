@@ -10,7 +10,7 @@ body {
 
 .title-pane {
     margin: 0px;
-    background-color: #1589FF;
+    background-color: #FFFFFF; /* light-blue: #1589FF */
     position: fixed;
     width: 100%;
     height: 68px;
@@ -18,16 +18,17 @@ body {
     left: 0px;
     display: flex;
     align-items: center;
+    border-bottom: 2px solid #ded5d5;
 }
 /*
 .header-container {
     
 }
-*/
+
 .main-header-container {
     
 }
-
+*/
 .main-header {
     font-size: 34px;
     margin-left: 30px;
@@ -42,40 +43,47 @@ body {
     display: block;
     margin-left: 80px;
 }
-
+/*
 .nav-list {
     
 }
-
-.nav-list>span {
+*/
+.nav-list>a {
     margin: 10px;
     padding: 10px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: inherit;
     transition: color 250ms, background 250ms;
+    border-radius: 4px;
 }
-.nav-list>span:hover {
+.nav-list>a:hover {
     color: white;
-    background-color: black;
+    background-color: #1589FF;
 }
 
-.nav-list>span>a {
+.nav-list>a {
     text-decoration: none;
     color: inherit;
 }
 .body-pane {
     position: absolute;
     top: 68px;
+    width: 100%;
+    height: calc(100% - 68px);
+    background: #F1F1F1;
+    z-index: -1;
 }
-/*
-.content-pane {
 
+.content-pane {
+    background: #F1F1F1;
 }
 
 .content-wrapper {
-
+    margin: 25px;
+    margin-left: 75px;
+    margin-right: 75px;
 }
-
+/*
 .content {
 
 }
