@@ -12,50 +12,60 @@ body {
     margin: 0px;
     background-color: #1589FF;
     position: fixed;
-    display: block;
     width: 100%;
-    height: 100px;
+    height: 68px;
     top: 0px;
     left: 0px;
+    display: flex;
+    align-items: center;
 }
 /*
 .header-container {
-
+    
 }
 */
 .main-header-container {
-    float: left;
-    position: relative;
+    
 }
 
 .main-header {
-    position: absolute;
-    top: 50px;
-    left: 33px;
-    transform: translate(0px, -50px);
     font-size: 34px;
+    margin-left: 30px;
 }
 
 .main-header>a {
     text-decoration: none;
     color: inherit;
 }
-/*
+
 .nav-container {
+    display: block;
+    margin-left: 80px;
+}
+
+.nav-list {
     
 }
-*/
-.nav-list {
-    float: right;
-}
-/*
-.nav-element {
 
+.nav-list>span {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: inherit;
+    transition: color 250ms, background 250ms;
 }
-*/
+.nav-list>span:hover {
+    color: white;
+    background-color: black;
+}
+
+.nav-list>span>a {
+    text-decoration: none;
+    color: inherit;
+}
 .body-pane {
     position: absolute;
-    top: 100px;
+    top: 68px;
 }
 /*
 .content-pane {

@@ -10,22 +10,26 @@
         <div class="title-pane">
             <div class="header-container">
                 <div class="main-header-container">
-                    <h1 class="main-header"><a href="">WebBase</a></h1>
+                    <h1 class="main-header"><a href>WebBase</a></h1>
                 </div>
             </div>
             <div class="nav-container">
-                <div class="hlist nav-list">
+                <div class="nav-list">
                     <script class="temp-script">
                         var navData=[
+                            ["Features", "/features"],
                             ["Examples", "/examples"],
-                            ["Contact", "/contact"],
-                            ["Browse", "/browse"],
-                            ["Learn More", "/info"]
+                            ["Community", "/browse"],
+                            ["Learn More", "/info"],
+                            ["Support", "/contact"]
                         ];
                         var navBar=document.getElementsByClassName("nav-list")[0];
                         for(var i=0; i<navData.length; i++) {
                             var span=document.createElement("span");
-                            span.appendChild(document.createTextNode(navData[i][0]));
+                            var a=document.createElement("a");
+                            a.setAttribute("href", navData[i][1]);
+                            a.appendChild(document.createTextNode(navData[i][0]));
+                            span.appendChild(a);
                             navBar.appendChild(span);
                         }
                         cleanup();
