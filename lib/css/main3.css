@@ -53,12 +53,11 @@ body {
     padding: 10px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: inherit;
-    transition: color 250ms, background 250ms;
-    border-radius: 4px;
+    transition: padding 250ms, border 250ms;
 }
 .nav-list>a:hover {
-    color: white;
-    background-color: #1589FF;
+    padding: 15px;
+    border: 2px solid #1589FF;
 }
 
 .nav-list>a {
