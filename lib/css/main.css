@@ -134,6 +134,8 @@ body {
     border-bottom: 2px solid #9090f8;
     color: white;
     font-size: 18px;
+    border: 1px solid #515151;
+    border-bottom: 0;
 }
 
 .popup-content>div:first-of-type {
@@ -141,6 +143,8 @@ body {
     padding: 25px;
     padding-bottom: 5px;
     height: calc(100% - 15px);
+    border: 1px solid #515151;
+    border-top: 0;
 }
 
 .popup-buttons {
@@ -166,6 +170,15 @@ body {
 .signin-form>div>label {
     display: block;
 }
+
+.signup-form>div:first-of-type {
+    float: left;
+    margin-right: 20px;
+}.signup-form>div>label {
+    display: block;
+    height: 23px;
+}
+
 .masker {
     position: fixed;
     width: 100%;
@@ -182,6 +195,7 @@ body {
 
 .link {
     cursor: pointer;
+    user-select: none;
 }
 
 .link:hover {
