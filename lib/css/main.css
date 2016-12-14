@@ -138,6 +138,14 @@ body {
     border-bottom: 0;
 }
 
+.popup-close-button {
+    margin-left: auto;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../res/images/exit_lightgray.png");
+}
+
 .popup-content>div:first-of-type {
     background-color: #F1F1F1;
     padding: 25px;
