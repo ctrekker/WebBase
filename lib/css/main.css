@@ -94,7 +94,6 @@ body {
     position: absolute;
     top: 68px;
     width: 100%;
-    height: calc(100% - 68px);
     background: #F1F1F1;
     z-index: -1;
 }

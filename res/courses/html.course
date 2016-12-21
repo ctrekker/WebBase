@@ -1,0 +1,112 @@
+What is HTML?
+|---|
+<p>HTML is the programming language used to make websites. Any website you visit on the internet is made up of HTML. There are lots of great website builders out there, which are good for making beautiful, content-rich websites quickly. However, having at least a little knowledge on HTML is a good thing to have. This tutorial will go through the very basics of how HTML works, and how to use it.</p>
+
+|=====|
+The Hello, World Program
+|---|
+<p>If you've programmed before, you probably know about the Hello, World program. If you're completely new, a Hello, World program it a basic program that just displays the words "Hello, World!" Although a very simple program, it is great for starters to learn what a programming language looks like, and the basics of how it works. The great thing is, the hello world program for HTML is very simple and easy to understand, even if you just started! Here's what it looks like:</p>
+<pre>
+<!--
+    <html>
+        <head>
+            <title>Hello, World!</title>
+        </head>
+        <body>
+            Hello, World!
+        </body>
+    </html>
+-->
+</pre>
+<span>This may seem like an overwhelmingly large amount of code for just a blank page saying "Hello, World!" but in truth, most of it is just setup. Below is a breakdown of what each part does.</span>
+<span>Line 1: <l>html<g></span>
+<span class="tabbed italic">Signifies the start of a new HTML page</span>
+<span>Line 2: <l>head<g></span>
+<span class="tabbed italic">Signifies the start of the header of the page</span>
+<span>Line 3: <l>title<g>Hello, World!<l>/title<g>
+<span class="tabbed italic">Tells the browser what to display on the page's tab. NOTE: This does not show uspan on the page itself. All the page content is located under the <body> tag on line 5</span>
+<span>Line 4: <l>/head<g></span>
+<span class="tabbed italic">Signifies the end of the header of the page (notice the / before head).</span>
+<span>Line 5: <l>body<g></span>
+<span class="tabbed italic">Signifies the start of the body of the page. This is where all of the content of the page is located.</span>
+<span>Line 6: Hello, World!</span>
+<span class="tabbed italic">This is the content of the page! AKA the text that shows uspan on the actual page itself, unlike the <head></span>
+<span>Line 7: <l>/body<g></span>
+<span class="tabbed italic">Signifies the start of the body of the page (once again, notice the / before body. It always means ending).</span>
+<span>Line 8: <l>/html<g></span>
+<span class="tabbed italic">Signifies the end of the HTML page (another example of the /).</span>
+<br>
+<p>This may seem way overcomplicated at first, but with practice, it will become super clear why each of those lines are there, and why others are not.</p>
+<h3>Summary</h3>
+<blockquote>
+<ul>
+    <li>Anything with < and > surrounding it is called a tag or element</li>
+    <li>A / before a tag name means it is signifying the end of an element</li>
+    <li>The <head> tag is only for setup, not for content. The body is used mainly for content.</li>
+    <li>The content in the &lt;title&gt; tag shows up in the page tab, and depending on the browser, in other places, but not in the page itself, since it is located in the &lt;head&gt; element.</li>
+</ul>
+</blockquote>
+
+|=====|
+An introduction to elements
+|---|
+<p>
+You've probably heard the elements of matter, but probably haven't heard of the elements of HTML. An element in HTML is, in simple terms, a piece of code that has 3 base capabilities: to contain more elements (have children), to be contained by an element (have parents), and have attributes. For now, we will be focusing on the first two base capabilities. As you saw in the hello world example, tags were used to signify the end or beginning of an element. Anything within the opening and closing tags of an element are called the element's children. Anything surrounding the element is a parent. To put this into view, you can see that the first tag you see is the <l>html<g> tag. This tag is what introduces the html element. If you look inside the <l>html<g> and <l>/html<g> tags, you will see that it has two children, being the head and body elements. This means that the html element has two children, and each of those children's parent is the html element. What is so cool about HTML is that each element can have an unlimited amount of children, and each child belongs to a parent element. This is called in html a hierarchy of elements, or an element tree.
+</p>
+<p>
+Now we will demonstrate this concept with a simple breakdown of the hello world program.
+</p>
+<pre>
+<!--
+    <!C--
+    This is a comment here. They can be used to write non-code 
+    stuff in you're code without the browser getting confused. 
+    I'll be using them for in-code explanations.
+    --C>
+
+    <!C--
+    This is the opening html tag, signifying the start of the html element
+    --C>
+    <html>
+        <!C--
+        This is the opening head tag.
+        The head element is a child of the html element, because 
+        it is in between the opening and closing html tags.
+        --C>
+        <head>
+
+        </head>
+
+        <!C--
+        It is the same case for the body element. It is too
+        a child of the html element
+        --C>
+        <body>
+            <!C--
+            Any elements inside the body element are considered
+            children or grandchildren or so on of the body.
+            
+            The p element containing "Hello, World!" is a child of
+            body and a grandchild of html. See how it works?
+            --C>
+            <p>Hello, World!</p>
+        </body>
+    </html>
+-->
+</pre>
+<p>
+It is a good habit to get into to use comments. Definitely don't use quite as many as the example above, but use enough to get the point across. If you don't put any comments into your code, when you come back to it, it can be very difficult to understand.
+</p>
+<p>
+Along with demonstrating somewhat over-the-top commenting, the example, written in comments, showed which elements are parents to others, and which children belong to the parent element. The whole concept of an element hierarchy can be difficult to grasp at first, but with practice, it will become easy to see which elements are children of what elements.
+</p>
+<h3>Summary</h3>
+<blockquote>
+    <ul>
+        <li>Elements have a parent, and can have children</li>
+        <li>The arrangement of elements in a HTML document is called an element hierarchy</li>
+        <li>Commenting can be good for organization, and keeping your thoughts straight</li>
+        <li>Over-commenting can lead to messy code. Remember, comments are only meant to be reminders!</li>
+        <li>Practicing good habits early is a good way to stay organized later on</li>
+    </ul>
+</blockquote>
