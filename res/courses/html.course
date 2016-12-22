@@ -1,3 +1,9 @@
+About this course
+|---|
+<p>
+This course was designed as both a tutorial and a reference. If you already know some HTML, but would like to learn more, a sidebar on the left of this page displays all of the different pages of this course. Along with this, a brief summary is offered at the bottom of each page, so if you are skimming, or already know a little, you can look back over the key points of each page. Examples are shown on each page, with the one exception of the "What is HTML?" page. At the bottom of the code sample, there is a run button, which will allow you to open a new window with the code being run. It is a good idea to do this if you don't understand a piece of code completely. At the bottom of each page there is a rate section and a comment section, both of which are optional. If you would like to send feedback, there is also a feedback icon at the bottom of each page if you would like to give feedback. I hope you enjoy learning HTML!
+</p>
+|=====|
 What is HTML?
 |---|
 <p>HTML is the programming language used to make websites. Any website you visit on the internet is made up of HTML. There are lots of great website builders out there, which are good for making beautiful, content-rich websites quickly. However, having at least a little knowledge on HTML is a good thing to have. This tutorial will go through the very basics of how HTML works, and how to use it.</p>
@@ -19,31 +25,31 @@ The Hello, World Program
 -->
 </pre>
 <span>This may seem like an overwhelmingly large amount of code for just a blank page saying "Hello, World!" but in truth, most of it is just setup. Below is a breakdown of what each part does.</span>
-<span>Line 1: <l>html<g></span>
+<span>Line 1: $<l>html<g>/$</span>
 <span class="tabbed italic">Signifies the start of a new HTML page</span>
-<span>Line 2: <l>head<g></span>
+<span>Line 2: $<l>head<g>/$</span>
 <span class="tabbed italic">Signifies the start of the header of the page</span>
-<span>Line 3: <l>title<g>Hello, World!<l>/title<g>
+<span>Line 3: $<l>title<g>/$Hello, World!<l>/title<g></span>
 <span class="tabbed italic">Tells the browser what to display on the page's tab. NOTE: This does not show uspan on the page itself. All the page content is located under the <body> tag on line 5</span>
-<span>Line 4: <l>/head<g></span>
+<span>Line 4: $<l>/head<g>/$</span>
 <span class="tabbed italic">Signifies the end of the header of the page (notice the / before head).</span>
-<span>Line 5: <l>body<g></span>
+<span>Line 5: $<l>body<g>/$</span>
 <span class="tabbed italic">Signifies the start of the body of the page. This is where all of the content of the page is located.</span>
 <span>Line 6: Hello, World!</span>
 <span class="tabbed italic">This is the content of the page! AKA the text that shows uspan on the actual page itself, unlike the <head></span>
-<span>Line 7: <l>/body<g></span>
+<span>Line 7: $<l>/body<g>/$</span>
 <span class="tabbed italic">Signifies the start of the body of the page (once again, notice the / before body. It always means ending).</span>
-<span>Line 8: <l>/html<g></span>
+<span>Line 8: $<l>/html<g>/$</span>
 <span class="tabbed italic">Signifies the end of the HTML page (another example of the /).</span>
 <br>
 <p>This may seem way overcomplicated at first, but with practice, it will become super clear why each of those lines are there, and why others are not.</p>
 <h3>Summary</h3>
 <blockquote>
 <ul>
-    <li>Anything with < and > surrounding it is called a tag or element</li>
+    <li>Anything with $</$ and $>/$ surrounding it is called a tag or element</li>
     <li>A / before a tag name means it is signifying the end of an element</li>
-    <li>The <head> tag is only for setup, not for content. The body is used mainly for content.</li>
-    <li>The content in the &lt;title&gt; tag shows up in the page tab, and depending on the browser, in other places, but not in the page itself, since it is located in the &lt;head&gt; element.</li>
+    <li>The $<l>head<g>/$ element is only for setup, not for content. The body is used mainly for content.</li>
+    <li>The content in the $<l>title<g>/$ tag shows up in the page tab, and depending on the browser, in other places, but not in the page itself, since it is located in the $<l>head<g>/$ element.</li>
 </ul>
 </blockquote>
 
@@ -51,7 +57,7 @@ The Hello, World Program
 An introduction to elements
 |---|
 <p>
-You've probably heard the elements of matter, but probably haven't heard of the elements of HTML. An element in HTML is, in simple terms, a piece of code that has 3 base capabilities: to contain more elements (have children), to be contained by an element (have parents), and have attributes. For now, we will be focusing on the first two base capabilities. As you saw in the hello world example, tags were used to signify the end or beginning of an element. Anything within the opening and closing tags of an element are called the element's children. Anything surrounding the element is a parent. To put this into view, you can see that the first tag you see is the <l>html<g> tag. This tag is what introduces the html element. If you look inside the <l>html<g> and <l>/html<g> tags, you will see that it has two children, being the head and body elements. This means that the html element has two children, and each of those children's parent is the html element. What is so cool about HTML is that each element can have an unlimited amount of children, and each child belongs to a parent element. This is called in html a hierarchy of elements, or an element tree.
+You've probably heard the elements of matter, but probably haven't heard of the elements of HTML. An element in HTML is, in simple terms, a piece of code that has 3 base capabilities: to contain more elements (have children), to be contained by an element (have parents), and have attributes. For now, we will be focusing on the first two base capabilities. As you saw in the hello world example, tags were used to signify the end or beginning of an element. Anything within the opening and closing tags of an element are called the element's children. Anything surrounding the element is a parent. To put this into view, you can see that the first tag you see is the $<l>html<g>/$ tag. This tag is what introduces the html element. If you look inside the $<l>html<g>/$ and $<l>/html<g>/$ tags, you will see that it has two children, being the $head/$ and $body/$ elements. This means that the $html/$ element has two children, and each of those children's parent is the $html/$ element. What is so cool about HTML is that each element can have an unlimited amount of children, and each child belongs to a parent element. This is called in html a hierarchy of elements, or an element tree.
 </p>
 <p>
 Now we will demonstrate this concept with a simple breakdown of the hello world program.
@@ -108,5 +114,84 @@ Along with demonstrating somewhat over-the-top commenting, the example, written 
         <li>Commenting can be good for organization, and keeping your thoughts straight</li>
         <li>Over-commenting can lead to messy code. Remember, comments are only meant to be reminders!</li>
         <li>Practicing good habits early is a good way to stay organized later on</li>
+    </ul>
+</blockquote>
+|=====|
+The paragraph element
+|---|
+<p>
+There are a few basic types of elements that make up the majority of the page. You already know about the $head/$, $body/$, and $html/$ elements, but probably aren't quite as sure about paragraph and header elements, so lets get started!
+</p>
+<p>
+The first element we will talk about is the $p/$ element. The "p" stands for "paragraph", so this element is used to declare paragraphs. Although it can have children elements, it is quite common for this element to contain only text, and no element children. If you were looking carefully, you might have seen that in the hello world program, opening and closing $p/$ tags surrounded the words "Hello, World!". A great feature with the $p/$ element is that if you have two $p/$ elements in the same parent, both with content, a gap will appear between the two, thus creating the "paragraph" effect. Here's an example:
+</p>
+<pre>
+<!--
+    <html>
+        <head>
+            <title>Paragraph Example</title>
+        </head>
+        <!C-- The body is where all content-containing elements should be put --C>
+        <body>
+            <!C-- First p element --C>
+            <p>
+                This is the first paragraph...
+            </p>
+            <!C-- Second p element --C>
+            <p>
+                This is the second paragraph...
+            </p>
+            <!C-- Third p element --C>
+            <p>
+                This is the third paragraph...
+            </p>
+        </body>
+    </html>
+-->
+</pre>
+<p>
+Pretty simple, right? You might have noticed the $title/$ element in the $head/$, arranged in the same way as the hello world program, the only difference being the content. In addition to those similarities, the $body/$ is also arranged in the same way. The primary difference is the children of the $body/$. You can see that there are 3 different $p/$ elements, all direct children of the $body/$ element. Each one contains a small amount of text, but much more text can be added. Once again, $p/$ elements are very useful for creating separate paragraphs of text, serving as a useful content utility tag. In the next page, we will discuss how to create different size headers.
+</p>
+<h3>Summary</h3>
+<blockquote>
+    <ul>
+        <li>$p/$ elements are used for creating paragraphs of text</li>
+        <li>$p/$ elements with the same direct parent create page breaks between the content inside them</li>
+    </ul>
+</blockquote>
+|=====|
+The header elements
+|---|
+<p>
+In documents, a header is a small piece of text that is written to tell the reader what the following content will be about. Headers are generally larger than the average text size, and are often times bolded as well. In HTML, headers are the same. Similarly to the $p/$ element, there are elements devoted to creating headers. But it turns out there are more than one types of header elements. Don't this let this be a shock to you, but there are six. Each one has a different tag to signify the start of the element, but each tag is very similar. These tags are the $h1/$, $h2/$, $h3/$, $h4/$, $h5/$, and $h6/$ elements. The largest header is the $h1/$, while the smallest is the $h6/$ header. Although there does seem to be a pattern, there is no $h7/$ or higher numbers. Here is an example:
+</p>
+<pre>
+<!--
+    <html>
+        <head>
+            <title>Header Example</title>
+        </head>
+        <body>
+            <!C-- Along with most other content elements, headers go in the body as well --C>
+            <h1>This is header size 1</h1>
+            <h2>This is header size 2</h2>
+            <h3>This is header size 3</h3>
+            <h4>This is header size 4</h4>
+            <h5>This is header size 5</h5>
+            <h6>This is header size 6</h6>
+        </body>
+    </html>
+-->
+</pre>
+<p>
+That's really it! Fairly similar to the $p/$ element, but adds additional styling features. The two primary features are that the text size is different than the $p/$ element, and the text inside any header element is bolded, to emphasize even further.
+</p>
+<h3>Summary</h3>
+<blockquote>
+    <ul>
+        <li>Headers are used to emphasize text in HTML</li>
+        <li>There are six types of header elements</li>
+        <li>The $h1/$ element is the largest, while the $h6/$ element is the smallest</li>
+        <li>Since header elements display content on the page, they belong in the $body/$ element</li>
     </ul>
 </blockquote>

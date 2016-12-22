@@ -26,8 +26,11 @@
     margin-left: 100px;
     margin-right: 100px;
 }
-.course-content-container span {
+.course-content-container>span {
     display: block;
+}
+.course-content-container pre>.button {
+    margin-top: 20px;
 }
 .nav-selected {
     font-weight: bold;
@@ -39,10 +42,17 @@
 .italic {
     font-style: italic;
 }
-blockquote {
+blockquote, pre {
     background-color: rgba(249,249,249,1);
     border-left: 5px solid rgba(233,233,233,1);
     color: rgba(0,0,0,1);
     margin-left: 20px;
     padding: 15px 15px 7px;
+}
+code {
+    font-size: 16px;
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 2px;
 }
