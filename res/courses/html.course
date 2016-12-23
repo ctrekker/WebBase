@@ -1,7 +1,7 @@
 About this course
 |---|
 <p>
-This course was designed as both a tutorial and a reference. If you already know some HTML, but would like to learn more, a sidebar on the left of this page displays all of the different pages of this course. Along with this, a brief summary is offered at the bottom of each page, so if you are skimming, or already know a little, you can look back over the key points of each page. Examples are shown on each page, with the one exception of the "What is HTML?" page. At the bottom of the code sample, there is a run button, which will allow you to open a new window with the code being run. It is a good idea to do this if you don't understand a piece of code completely. At the bottom of each page there is a rate section and a comment section, both of which are optional. If you would like to send feedback, there is also a feedback icon at the bottom of each page if you would like to give feedback. I hope you enjoy learning HTML!
+This course was designed as both a tutorial and a reference. If you already know some HTML, but would like to learn more, a sidebar on the left of this page displays all of the different pages of this course. Along with this, a brief summary is offered at the bottom of each page, so if you are skimming, or already know a little, you can look back over the key points of each page. Examples are shown on each page, with the one exception of the "What is HTML?" page. At the bottom of the code sample, there is a view button, which will allow you to open a new window with the code being viewed. It is a good idea to do this if you don't understand a piece of code completely. At the bottom of each page there is a rate section and a comment section, both of which are optional. If you would like to send feedback, there is also a feedback icon at the bottom of each page if you would like to give feedback. I hope you enjoy learning HTML!
 </p>
 |=====|
 What is HTML?
@@ -194,4 +194,74 @@ That's really it! Fairly similar to the $p/$ element, but adds additional stylin
         <li>The $h1/$ element is the largest, while the $h6/$ element is the smallest</li>
         <li>Since header elements display content on the page, they belong in the $body/$ element</li>
     </ul>
+</blockquote>
+|=====|
+The div and span elements
+|---|
+<p>
+On this page, I will introduce to you a few new elements, being the $div/$ and $span/$ elements. Right now, they probably won't seem very important, but will soon become vital to your websites.
+</p>
+<h3>Div Elements</h3>
+<p>
+On its own, a $div/$ is not always very useful. It stands for divider, because it is commonly used to divide sections of a page. It has nearly no styling that comes with it, so they are usually customized using CSS. Lets say we want a header section and a content section in our page. Here is a quick example demonstrating this concept.
+</p>
+<pre>
+<!--
+    <html>
+        <head>
+            <title>Div example</title>
+        </head>
+        <body>
+            <!C-- Header Div --C>
+            <div>
+                <h1>Main header</h1>
+            </div>
+
+            <!C-- Content Div --C>
+            <div>
+                <p>
+                    Content paragraph 1...
+                </p>
+                <p>
+                    Content paragraph 2...
+                </p>
+            </div>
+        </body>
+    </html>
+-->
+</pre>
+<p>
+As you can see, there are two $div/$ elements in this example: one surrounding the header, and another surrounding the paragraphs. Not only does this help divide up the page into sections, later on, it will help with CSS styling. This is another good coding habit to start working on in these early phases in learning HTML.
+</p>
+<h3>Span Elements</h3>
+<p>
+Span elements, being much similar to $div/$ elements in that they don't have much default styling, are not very useful until you start CSS. However, once you learn just a little CSS, they will become very useful. You know that $div/$ elements are used for dividing sections of your page. $span/$ elements are used to mark spans of text inside of a paragraph, header, or really any other content-holding element. Of course, they can be used otherwise, but this is their intended purpose. Don't worry about $span/$ elements right now, because they are useless unless you style them with CSS. The example below will show you how to use them.
+</p>
+<pre>
+<!--
+    <html>
+        <head>
+            <title>Span example</title>
+        </head>
+        <body>
+            <p>
+                The word "hello" is surrounded by a span.
+                <span>Hello</span>, World!
+            </p>
+        </body>
+    </html>
+-->
+</pre>
+<p>
+If you view the example, you will see that the $span/$ appears to have done nothing to the word "Hello", because it didn't. Not very useful without CSS. So what is all this talk of CSS? Well, you can find out in the CSS course, which is linked on the next page! I highly advise you to get through that before continuing on, because the following pages assume you know at least a little CSS.
+</p>
+<h3>Summary</h3>
+<blockquote>
+    <ul>
+        <li>Div elements are used to divide a page up</li>
+        <li>Div elements don't have any default visual styling, so without CSS, they don't appear on the page</li>
+        <li>Span elements don't change text unless CSS is applied</li>
+        <li>These two elements are not of much use without CSS</li>
+    </ul>
+    Let's learn CSS now!
 </blockquote>
