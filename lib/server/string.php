@@ -1,8 +1,8 @@
 <?php
     header("Content-Type: text/plain");
-    if(isset($_GET["res"])&&isset($_GET["id"])) {
-        $name=$_GET["res"];
-        $id=(int) $_GET["id"];
+    if(isset($_POST["res"])&&isset($_POST["id"])) {
+        $name=$_POST["res"];
+        $id=(int) $_POST["id"];
 
         $root=$_SERVER["DOCUMENT_ROOT"];
         $res_path=$root."/res/strings/".$name.".res";

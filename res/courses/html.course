@@ -13,7 +13,7 @@ The Hello, World Program
 |---|
 <p>If you've programmed before, you probably know about the Hello, World program. If you're completely new, a Hello, World program it a basic program that just displays the words "Hello, World!" Although a very simple program, it is great for starters to learn what a programming language looks like, and the basics of how it works. The great thing is, the hello world program for HTML is very simple and easy to understand, even if you just started! Here's what it looks like:</p>
 <pre code-res-id=0">
-
+    
 </pre>
 <span>This may seem like an overwhelmingly large amount of code for just a blank page saying "Hello, World!" but in truth, most of it is just setup. Below is a breakdown of what each part does.</span>
 <span>Line 1: $<l>html<g>/$</span>
@@ -53,7 +53,7 @@ You've probably heard the elements of matter, but probably haven't heard of the 
 <p>
 Now we will demonstrate this concept with a simple breakdown of the hello world program.
 </p>
-<pre code-res-id=1">
+<pre code-res-id="1">
 
 </pre>
 <p>
