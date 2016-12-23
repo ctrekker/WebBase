@@ -12,17 +12,8 @@ What is HTML?
 The Hello, World Program
 |---|
 <p>If you've programmed before, you probably know about the Hello, World program. If you're completely new, a Hello, World program it a basic program that just displays the words "Hello, World!" Although a very simple program, it is great for starters to learn what a programming language looks like, and the basics of how it works. The great thing is, the hello world program for HTML is very simple and easy to understand, even if you just started! Here's what it looks like:</p>
-<pre>
-<!--
-    <html>
-        <head>
-            <title>Hello, World!</title>
-        </head>
-        <body>
-            Hello, World!
-        </body>
-    </html>
--->
+<pre code-res-id=0">
+
 </pre>
 <span>This may seem like an overwhelmingly large amount of code for just a blank page saying "Hello, World!" but in truth, most of it is just setup. Below is a breakdown of what each part does.</span>
 <span>Line 1: $<l>html<g>/$</span>
@@ -62,43 +53,8 @@ You've probably heard the elements of matter, but probably haven't heard of the 
 <p>
 Now we will demonstrate this concept with a simple breakdown of the hello world program.
 </p>
-<pre>
-<!--
-    <!C--
-    This is a comment here. They can be used to write non-code 
-    stuff in you're code without the browser getting confused. 
-    I'll be using them for in-code explanations.
-    --C>
+<pre code-res-id=1">
 
-    <!C--
-    This is the opening html tag, signifying the start of the html element
-    --C>
-    <html>
-        <!C--
-        This is the opening head tag.
-        The head element is a child of the html element, because 
-        it is in between the opening and closing html tags.
-        --C>
-        <head>
-
-        </head>
-
-        <!C--
-        It is the same case for the body element. It is too
-        a child of the html element
-        --C>
-        <body>
-            <!C--
-            Any elements inside the body element are considered
-            children or grandchildren or so on of the body.
-            
-            The p element containing "Hello, World!" is a child of
-            body and a grandchild of html. See how it works?
-            --C>
-            <p>Hello, World!</p>
-        </body>
-    </html>
--->
 </pre>
 <p>
 It is a good habit to get into to use comments. Definitely don't use quite as many as the example above, but use enough to get the point across. If you don't put any comments into your code, when you come back to it, it can be very difficult to understand.
@@ -125,29 +81,8 @@ There are a few basic types of elements that make up the majority of the page. Y
 <p>
 The first element we will talk about is the $p/$ element. The "p" stands for "paragraph", so this element is used to declare paragraphs. Although it can have children elements, it is quite common for this element to contain only text, and no element children. If you were looking carefully, you might have seen that in the hello world program, opening and closing $p/$ tags surrounded the words "Hello, World!". A great feature with the $p/$ element is that if you have two $p/$ elements in the same parent, both with content, a gap will appear between the two, thus creating the "paragraph" effect. Here's an example:
 </p>
-<pre>
-<!--
-    <html>
-        <head>
-            <title>Paragraph Example</title>
-        </head>
-        <!C-- The body is where all content-containing elements should be put --C>
-        <body>
-            <!C-- First p element --C>
-            <p>
-                This is the first paragraph...
-            </p>
-            <!C-- Second p element --C>
-            <p>
-                This is the second paragraph...
-            </p>
-            <!C-- Third p element --C>
-            <p>
-                This is the third paragraph...
-            </p>
-        </body>
-    </html>
--->
+<pre code-res-id="2">
+
 </pre>
 <p>
 Pretty simple, right? You might have noticed the $title/$ element in the $head/$, arranged in the same way as the hello world program, the only difference being the content. In addition to those similarities, the $body/$ is also arranged in the same way. The primary difference is the children of the $body/$. You can see that there are 3 different $p/$ elements, all direct children of the $body/$ element. Each one contains a small amount of text, but much more text can be added. Once again, $p/$ elements are very useful for creating separate paragraphs of text, serving as a useful content utility tag. In the next page, we will discuss how to create different size headers.
@@ -165,23 +100,8 @@ The header elements
 <p>
 In documents, a header is a small piece of text that is written to tell the reader what the following content will be about. Headers are generally larger than the average text size, and are often times bolded as well. In HTML, headers are the same. Similarly to the $p/$ element, there are elements devoted to creating headers. But it turns out there are more than one types of header elements. Don't this let this be a shock to you, but there are six. Each one has a different tag to signify the start of the element, but each tag is very similar. These tags are the $h1/$, $h2/$, $h3/$, $h4/$, $h5/$, and $h6/$ elements. The largest header is the $h1/$, while the smallest is the $h6/$ header. Although there does seem to be a pattern, there is no $h7/$ or higher numbers. Here is an example:
 </p>
-<pre>
-<!--
-    <html>
-        <head>
-            <title>Header Example</title>
-        </head>
-        <body>
-            <!C-- Along with most other content elements, headers go in the body as well --C>
-            <h1>This is header size 1</h1>
-            <h2>This is header size 2</h2>
-            <h3>This is header size 3</h3>
-            <h4>This is header size 4</h4>
-            <h5>This is header size 5</h5>
-            <h6>This is header size 6</h6>
-        </body>
-    </html>
--->
+<pre code-res-id="3">
+
 </pre>
 <p>
 That's really it! Fairly similar to the $p/$ element, but adds additional styling features. The two primary features are that the text size is different than the $p/$ element, and the text inside any header element is bolded, to emphasize even further.
@@ -205,30 +125,8 @@ On this page, I will introduce to you a few new elements, being the $div/$ and $
 <p>
 On its own, a $div/$ is not always very useful. It stands for divider, because it is commonly used to divide sections of a page. It has nearly no styling that comes with it, so they are usually customized using CSS. Lets say we want a header section and a content section in our page. Here is a quick example demonstrating this concept.
 </p>
-<pre>
-<!--
-    <html>
-        <head>
-            <title>Div example</title>
-        </head>
-        <body>
-            <!C-- Header Div --C>
-            <div>
-                <h1>Main header</h1>
-            </div>
+<pre code-res-id="4">
 
-            <!C-- Content Div --C>
-            <div>
-                <p>
-                    Content paragraph 1...
-                </p>
-                <p>
-                    Content paragraph 2...
-                </p>
-            </div>
-        </body>
-    </html>
--->
 </pre>
 <p>
 As you can see, there are two $div/$ elements in this example: one surrounding the header, and another surrounding the paragraphs. Not only does this help divide up the page into sections, later on, it will help with CSS styling. This is another good coding habit to start working on in these early phases in learning HTML.
@@ -237,20 +135,8 @@ As you can see, there are two $div/$ elements in this example: one surrounding t
 <p>
 Span elements, being much similar to $div/$ elements in that they don't have much default styling, are not very useful until you start CSS. However, once you learn just a little CSS, they will become very useful. You know that $div/$ elements are used for dividing sections of your page. $span/$ elements are used to mark spans of text inside of a paragraph, header, or really any other content-holding element. Of course, they can be used otherwise, but this is their intended purpose. Don't worry about $span/$ elements right now, because they are useless unless you style them with CSS. The example below will show you how to use them.
 </p>
-<pre>
-<!--
-    <html>
-        <head>
-            <title>Span example</title>
-        </head>
-        <body>
-            <p>
-                The word "hello" is surrounded by a span.
-                <span>Hello</span>, World!
-            </p>
-        </body>
-    </html>
--->
+<pre code-res-id="5">
+
 </pre>
 <p>
 If you view the example, you will see that the $span/$ appears to have done nothing to the word "Hello", because it didn't. Not very useful without CSS. So what is all this talk of CSS? Well, you can find out in the CSS course, which is linked on the next page! I highly advise you to get through that before continuing on, because the following pages assume you know at least a little CSS.
@@ -265,3 +151,12 @@ If you view the example, you will see that the $span/$ appears to have done noth
     </ul>
     Let's learn CSS now!
 </blockquote>
+|=====|
+Learning CSS
+|---|
+<p>
+Since CSS is very important in HTML, to be able to understand much more HTML code without knowledge of CSS is very difficult. If you don't already know CSS, I highly advise you take at least a small chunk of the CSS tutorial before proceeding to the next page in the HTML course.
+</p>
+<p>
+<span class="button" onclick="goto('#/CSS')">Take CSS Course!</span>
+</p>
