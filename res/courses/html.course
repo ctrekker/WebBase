@@ -152,6 +152,78 @@ If you view the example, you will see that the $span/$ appears to have done noth
     Let's learn CSS now!
 </blockquote>
 |=====|
+HTML attributes
+|---|
+<p>
+Attributes are real important parts of HTML. They are used to describe elements, thus the name attribute. A HTML attribute consists of a key, and of a value. The key and value are seperated with an "=" sign, and the value is surrounded by quotations. Each key-value set, or attribute declaration is separated with a space. Although there are many build in attributes included in HTML, you can define an attribute to any name and any value.
+</p>
+<p>
+Let's say you have two different $p/$ elements, but you want to give them a specific value in which they belong (an ID). Without attributes, this is made very difficult. All you have to do is set an element's $id/$ attribute to whatever it should be identified as. In the $id/$ attribute's case, it is a good habit to keep id's unique for each element, that way two elements never have the same ID and create conflicts. If you don't want your element to have an ID, no problem! Just don't put in the $id/$ attribute, because it is completely optional.
+</p>
+<p>
+Here's an example to show what attributes look like, how to define them, and the rules of attributes:
+</p>
+<pre code-res-id="6">
+
+</pre>
+<p>
+You probably noticed that the only elements that had attributes were those within the body. Attributes still can be applied outside of the $body/$, but at this stage in your HTML learning, they won't be of much use. Even now, the 'id' attribute might not seem very useful, but in CSS, specific elements are often targeted using IDs, or another attribute called the $class/$ attribute. The $class/$ attribute is very similar to the ID element, as it is used to identify elements. However, the main difference between the two is that it is fine for two elements to have the same class. The $id/$ and $class/$ elements are definitly not the only attributes, and you will discover more and more as you keep learning, but these two are two of the most important elements in HTML.
+</p>
+<h3>Summary</h3>
+<blockquote>
+    <ul>
+        <li>Attributes are made up of a key and a value</li>
+        <li>Attributes can be found in the opening tag of an element</li>
+        <li>Attributes are used to set data to a specific element</li>
+        <li>Attributes are tremendously important</li>
+    </ul>
+</blockquote>
+|=====|
+The a and img elements
+|---|
+<h3>Link Elements (a)</h3>
+<p>
+The $a/$ element is used to create hyperlinks, or more commonly known as nowadays as links. Links take the user to another HTML page, whether it be your own, or somebody else's. The reason this element is being introduced after the introduction is because they are both heavily intervened with certain attributes. In the $a/$ element's case, it uses the $href/$ ID to specify where the link should lead. The value of this element contains a URL. An $a/$ element without the $href/$ attribute is not very useful, so whenever you are using a link, it should nearly always have a $href/$ attribute defined in it.
+</p>
+<p>
+Here's a quick and straightfoward example of how an $a/$ element should be defined:
+</p>
+<pre code-res-id="7">
+
+</pre>
+<p>
+Simple! Remember that the URL is not displayed in a link, and that the text that is to be displayed should be located inside the $a/$ element.
+</p>
+<h3>Img Elements</h3>
+<p>
+Img stands for image. This allows you to put images into your websites using this element. This isn't quite as simple as it seems, though. Unlike most online website tools we have access to today, you can't simply drag an image in. Similarly to the $a/$ element, the $img/$ element uses the $src/$ attribute, which stands for source. This is a URL pointing to the image file. This means if you have a offline image (stored on your computer), then it will have to be uploaded to some form of public server. Lets take a look at the structure now.
+</p>
+<p>
+We will be using an image of a ball on this page. The name of the ball picture is $ball.png/$, so we will put that in the $src/$ attribute. The $img/$ element is also special in another way. Every element we have gone over so far has had a combination of an opening and closing tag. In this element's case, it is a combination of the two. It looks like the opening tag, without a closing tag closing the element. In fact, there is no element body, so an image element cannot have children. Here's what it looks like.
+</p>
+<pre code-res-id="8">
+
+</pre>
+<p>
+The only thing we need to do with this code is put it inside the body of an HTML document to display it. Here's what the image looks like:
+</p>
+<img src="ball.jpg" width="250" height="250"/>
+<p>
+This course along with a few other courses will use this image as an example image to demonstrate concepts of drawing image graphics.
+</p>
+<h3>Summary</h3>
+<blockquote>
+    <ul>
+        <li>Links (or hyperlinks) can be clicked on to get directed to a new location</li>
+        <li>Links come with built-in styling, being blue and underlined</li>
+        <li>Links need a $href/$ attribute to know where to link to</li>
+        <li>Images display an image based on a URL to a image file</li>
+        <li>Image's path is pointed to using the $src/$ attribute</li>
+        <li>Images cannot have any children elements</li>
+        <li>EXTRA: Images width/height can be set with the $width/$ and $height/$ attributes. The measurement is done in pixels.</li>
+    </ul>
+</blockquote>
+|=====|
 Learning CSS
 |---|
 <p>

@@ -1,3 +1,4 @@
+
 <html>
     <head>
         <title>Hello, World!</title>
@@ -111,3 +112,41 @@ This is the opening html tag, signifying the start of the html element
         </p>
     </body>
 </html>
+***************
+<html>
+        <head>
+            <title>Attribute Example</title>
+        </head>
+        <body>
+            <!C-- This header's ID is 'header' (quotations not included) --C>
+            <!C-- Attributes happen in between the greater than and less than signs --C>
+            <h1 id="header">HTML Attributes Example</h1>
+
+            <!C-- This paragraph's ID is 'content' (quotations not included) --C>
+            <!C-- Notice how the ID describes the element's purpose --C>
+            <p id="content">
+                Attributes are vital parts to HTML. Without them, individual element identification would be very difficult.
+            </p>
+
+            <!C-- This div's ID is 'footer' (quotations not included) --C>
+            <!C-- The attribute 'fake-attribute' is not a real attribute, and is ignored by the browser --C>
+            <div id="footer" fake-attribute="true">
+                Footer content here...
+            </div>
+        </body>
+    </html>
+    ***************
+    <html>
+        <head>
+            <title>HTML Link Example</title>
+        </head>
+        <body>
+            <!C-- As you can see, the 'href' attribute contains a URL --C>
+            <!C-- The text inside the a element is the text to be displayed. The url is never displayed --C>
+            <a href="http://www.google.com">Link to Google</a>
+        </body>
+    </html>
+    ***************
+    <!C-- Notice that the img has no closing tag --C>
+    <!C-- It is opened and closed in a single tag, so only attributes can be changed --C>
+    <img src="ball.jpg"/>
