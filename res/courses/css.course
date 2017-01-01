@@ -7,5 +7,11 @@ This course was designed as both a tutorial and a reference. If you already know
 What is CSS?
 |---|
 <p>
-CSS stands for "Cascading Style Sheets". More content here...
+CSS stands for "Cascading Style Sheets". It is used for making websites pleasant and adds style and color to a HTML document. If you went through the HTML course, you probably noticed how bland, ugly, or unappealing the websites were in the example. They contained the bare bones, and that seemed to be it. Turns out that this site heavily relies on CSS to work. In fact, it relies so heavily on it, you probably wouldn't even recognize it if we took it away. This course, you will learn how to apply CSS to your HTML pages, and bring them to life with positioning, coloring, and flexibility skills, all put into action using CSS. So lets get started!
+</p>
+|=====|
+The style element
+|---|
+<p>
+
 </p>

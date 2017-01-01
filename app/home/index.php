@@ -1,3 +1,10 @@
+<?php
+    session_start();
+
+    if(!isset($_SESSION["user"])) {
+        header("Location: ../../");
+    }
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,9 +23,9 @@
             </div>
             <div class="user-container">
                 <div class="user-options-list">
-                    <span class="link user-option" link="signin">&lt;User&gt;</span>
+                    <span class="link user-option" link="NONE"><?php echo $_SESSION["user"]["username"] ?></span>
                     <span class="v-divider"></span>
-                    <span class="link user-option" link="signup">Sign Out</span>
+                    <span class="link user-option" link="../signout.php">Sign Out</span>
                 </div>
             </div>
         </div>

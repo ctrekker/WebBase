@@ -32,6 +32,19 @@
 .course-content-container pre>.button {
     margin-top: 20px;
 }
+.course-options {
+    margin-top: 50px;
+}
+.course-options>span {
+    font-size: 1.11em;
+}
+.course-page-next {
+    position: absolute;
+    right: 100px;
+}
+.course-page-back {
+    margin-left: 100px;
+}
 .nav-selected {
     font-weight: bold;
 }

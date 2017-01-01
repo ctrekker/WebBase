@@ -150,3 +150,4 @@ This is the opening html tag, signifying the start of the html element
     <!C-- Notice that the img has no closing tag --C>
     <!C-- It is opened and closed in a single tag, so only attributes can be changed --C>
     <img src="ball.jpg"/>
+    

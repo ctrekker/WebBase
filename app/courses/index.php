@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,14 +15,14 @@
         <div class="title-pane">
             <div class="header-container">
                 <div class="main-header-container">
-                    <h1 class="main-header"><a href>WebBase</a></h1>
+                    <h1 class="main-header"><a href="../home">WebBase</a></h1>
                 </div>
             </div>
             <div class="user-container">
                 <div class="user-options-list">
-                    <span class="link user-option" link="signin">&lt;User&gt;</span>
+                    <span class="link user-option" link="NONE"><?php echo $_SESSION["user"]["username"]; ?></span>
                     <span class="v-divider"></span>
-                    <span class="link user-option" link="signup">Sign Out</span>
+                    <span class="link user-option" link="../signout.php">Sign Out</span>
                 </div>
             </div>
         </div>
@@ -38,7 +41,8 @@
                         
                     </div>
                     <div class="course-options">
-
+                        <span class="button course-page-back">&#129104; Previous</span>
+                        <span class="button course-page-next">Next &#129106;</span>
                     </div>
                 </div>
             </div>
